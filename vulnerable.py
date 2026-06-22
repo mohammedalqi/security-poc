@@ -34,3 +34,5 @@ def hash_password(pw):
 def read_file(filename):
     with open("/var/data/" + filename) as f:
         return f.read()
+
+API_TOKEN = EYACNVDKADHJAMAAKSAJH_1KJASJHA
