@@ -1,14 +1,6 @@
-# vuln.py
-import os
-def run(cmd):
-    os.system("ping " + cmd) 
-import sqlite3
-def get_user(uid):
-    db = sqlite3.connect("app.db")
-    db.execute("SELECT * FROM users WHERE id = " + uid)
+import subprocess
 
-#API KEY
-API_KEY = "cor_O2CjoeUATapgi1aLMCjIqNZWb9BxJTMxtmUxf15jtv4"
-username = admin
-password = admin
-
+# SECURE: Using subprocess prevents argument injection
+safe_folder = input("Enter the folder name to list: ")
+# Pass arguments as a list to avoid shell interpretation
+subprocess.run(["ls", "-la", safe_folder])
