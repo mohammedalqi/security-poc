@@ -9,4 +9,6 @@ def get_user(uid):
 
 #API KEY
 API_KEY = "cor_O2CjoeUATapgi1aLMCjIqNZWb9BxJTMxtmUxf15jtv4"
+username = admin
+password = admin
 
